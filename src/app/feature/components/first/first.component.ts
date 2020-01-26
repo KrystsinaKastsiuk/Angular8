@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Preferences } from '../../enums/preferences';
+import { Preferences } from './preferences';
 
 @Component({
   selector: 'app-first',
