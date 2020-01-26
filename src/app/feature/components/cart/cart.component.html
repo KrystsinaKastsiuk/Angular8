@@ -1,0 +1,17 @@
+<div *ngIf="!!addedProducts.length">
+    <div *ngFor="let addedProduct of addedProducts">
+        <ul>
+            <li>Action: {{addedProduct.name}}</li>
+            <li>Done: {{addedProduct.description}}</li>
+            <li>Priority: {{addedProduct.category}}</li>
+            <li>Estimate Hours: {{addedProduct.price}}</li>
+            <li>Actual Hours: {{addedProduct.originCountry}}</li>
+            <li>Actual Hours: {{addedProduct.isAvailable}}</li>
+        </ul>
+        <button (click)="removeProduct(addedProduct)">Remove</button>
+    </div>
+</div>
+<div *ngIf="!addedProducts.length">
+    <p>Cart is empty!</p>
+</div>
+
