@@ -13,7 +13,7 @@ export class FirstComponent implements OnInit {
   email: string;
   age: number;
   active: boolean;
-  preferences: Object;
+  preferences: object;
 
   constructor() {
     this.userName = 'Krystsina';
