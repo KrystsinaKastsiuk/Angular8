@@ -1,6 +1,7 @@
 <div *ngIf="!!addedProducts.length">
     <div *ngFor="let addedProduct of addedProducts">
         <ul>
+          <!-- Поправьте лейблы -->
             <li>Action: {{addedProduct.name}}</li>
             <li>Done: {{addedProduct.description}}</li>
             <li>Priority: {{addedProduct.category}}</li>

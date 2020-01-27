@@ -16,6 +16,7 @@ export class FirstComponent implements OnInit {
   preferences: object;
 
   constructor() {
+    // Можно сразу во время объявления свойств задать эти значения, кода будет в 2 раза меньше
     this.userName = 'Krystsina';
     this.userSurname = 'Kastsiuk';
     this.email = 'Krystsina_Kastsiuk@epam.com';

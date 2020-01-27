@@ -27,7 +27,7 @@ export class ProductService {
             price: 768,
             originCountry: 'China',
             description: 'TV of LG corporation',
-            isAvailable: true 
+            isAvailable: true
         }
     ];
 
