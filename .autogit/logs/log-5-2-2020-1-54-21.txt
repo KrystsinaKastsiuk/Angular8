@@ -1,0 +1,16 @@
+-------------------- Auto-Git Log --------------------
+		Thu Mar 05 2020 01:54:21 GMT+0300 (Москва, стандартное время)
+------------------------------------------------------
+
+Modified files:
+* src/app/feature/components/product/product.service.ts
+
+
+Created files:
+* .autogit/logs/log-5-2-2020-1-24-6.txt
+
+
+Deleted files:
+
+
+Renamed files:
