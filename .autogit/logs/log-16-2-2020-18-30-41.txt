@@ -1,0 +1,15 @@
+-------------------- Auto-Git Log --------------------
+		Mon Mar 16 2020 18:30:41 GMT+0300 (Москва, стандартное время)
+------------------------------------------------------
+
+Modified files:
+
+
+Created files:
+* .autogit/logs/log-16-2-2020-18-0-36.txt
+
+
+Deleted files:
+
+
+Renamed files:
