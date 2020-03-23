@@ -1,0 +1,19 @@
+-------------------- Auto-Git Log --------------------
+		Mon Mar 23 2020 22:22:32 GMT+0300 (Москва, стандартное время)
+------------------------------------------------------
+
+Modified files:
+
+
+Created files:
+* .autogit/logs/log-23-2-2020-21-49-44.txt
+* src/app/feature/components/cart/cart.module.ts
+* src/app/feature/components/product-list/orders.modules.ts
+* src/app/feature/components/product/products.module.ts
+* src/app/shared/shared.modules.ts
+
+
+Deleted files:
+
+
+Renamed files:
