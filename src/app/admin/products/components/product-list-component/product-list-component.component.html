@@ -1,0 +1,12 @@
+<button
+  type="button"
+  class="btn btn-primary"
+  [routerLink]="['add']">Add new product
+</button>
+<div *ngFor="let product of products">
+  <app-product-component
+    [product]="product"
+    [routerLink]="['edit', product.id]"
+    (deleteProduct)="onDeleteProduct($event)">
+  </app-product-component>
+</div>
