@@ -1,0 +1,49 @@
+<h2>Cart</h2>
+
+<div class="col-auto my-1">
+  <label class="mr-sm-2" for="fieldSelect">Sort by...</label>
+  <select class="custom-select mr-sm-2" id="fieldSelect" (change)="onSelect($event.target.value)" [(ngModel)]="selectedField.id">
+    <option *ngFor="let field of fields" value= {{field.id}}>
+      {{field.name}}
+    </option>
+  </select>
+</div>
+
+<div class="col-auto my-1">
+  <label class="mr-sm-2" for="directionSelect">Direction</label>
+  <select class="custom-select mr-sm-2" id="directionSelect" [(ngModel)]="selectedDirection">
+    <option value=true>Ascending</option>
+    <option value=false>Descending</option>
+  </select>
+</div>
+
+<p *ngIf="(cartState$ | async).error as value">{{value}}</p>
+
+<div *ngIf="cart && cart.length; else empty">
+  <!-- <div *ngFor="let item of cart | orderByPipe:selectedField.id:selectedDirection"> -->
+  <div *ngFor="let item of cart">
+  <!-- <div *ngFor='let item of (cartState$ | async).data'> -->
+    <app-cart-item *ngIf="item.count"
+      [item]="item"
+      (removeItem)="onRemoveItem($event)"
+      (plus)="onPlus($event)"
+      (minus)="onMinus($event)">
+    </app-cart-item>
+  </div>
+  <div [textContent]="getSum()"></div>
+  <div [textContent]="getCount()"></div>
+  <button class="btn" routerLink="/new-order">Order</button>
+  <button class="btn btn-danger" (click)="onClearCart()">Clear cart</button>
+  <br><br>
+  Enter your address:
+  <input #address
+      (keyup.enter)="addAddress(address.value)"
+      (blur)="addAddress(address.value)">
+  <p>{{yourAddress}}</p>
+
+</div>
+
+
+<ng-template #empty>
+  <div>Cart is empty...</div>
+</ng-template>
